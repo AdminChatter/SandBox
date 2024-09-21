@@ -74,7 +74,73 @@
                     <p class = "col mt-5 mb-4 mx-3 fs-4">Welcome to TripPlanner. Feel free to explore and give us your feedback.</p>
                 </div>
 
-                <
+                <div class="d-flex justify-content-center mt-5" id="search">
+                    <div class="col-md-6 text-center">
+                        <form>
+                            <div class="input-group">
+                                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                            </div>
+
+                            <div class="d-flex justify-content-end mt-2">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="searchOption" id="parks" value="parks">
+                                    <label class="form-check-label" for="parks">Parks</label>
+                                </div>
+
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="searchOption" id="trails" value="trails">
+                                    <label class="form-check-label" for="trails">Trails</label>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+
+                <!-- This will display after hitting search button -->
+                <div class="row mt-3 mx-3" id="searchResults">
+                        <div class="card mt-2">
+                            <div class="card-body row">
+                                <img class ="col-2" src="https://via.placeholder.com/50" class="card-img-top" alt="...">
+                                <div class="col-10" id = "card-info">
+                                    <h5 class="card-title">Trail Name</h5>
+                                    <p class="card-text">
+                                        <strong>City:</strong> City Name <br>
+                                        <strong>Zip Code:</strong> 12345 <br>
+                                        <strong>Address:</strong> 1234 Street Name <br>
+                                        <strong>Transit:</strong> Bus 123 <br>
+                                        <strong>Description:</strong> This is a trail that is very nice and long. <br>
+                                        <strong>Distance:</strong> 5 miles <br>
+                                        <strong>Surface:</strong> Dirt <br>
+                                        <strong>Difficulty:</strong> Easy <br>
+                                        <strong>Parking:</strong> Yes <br>
+                                        <strong>Facilities:</strong> Restrooms <br>
+                                        <strong>Hours:</strong> 8am - 5pm <br>
+                                        <strong>Attractions:</strong> Waterfall <br>
+                                        <strong>Rating:</strong> 4.5/5 with 4 ratings<br>
+                                        <strong>Modified:</strong> 10/10/2021 <br>
+                                    </p>
+
+                                    <a href="#collapseExample" class="btn btn-primary" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                        Things to Bring
+                                    </a>
+                                    <a href="#" class="btn btn-primary">Add To Trips</a>
+
+                                    <!-- Collapsible content -->
+                                    <div class="collapse mt-3" id="collapseExample">
+                                        <form>
+                                            <div class="input-group">
+                                                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                                                <button class="btn btn-outline-success" type="submit">Search</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+
         </section>
     </main>
 
